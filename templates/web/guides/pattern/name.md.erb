@@ -9,8 +9,8 @@ the fact that there are so many of them becomes a maintenance concern by itself 
 worries start to creep in about whether all of the patterns really implement a given operation
 in exactly the same way.
 
-Even if you don't have so many patterns it can still become tedious to have to manually
-create the pattern every time a new test is added or modified, wouldn't it be nice if
+Even if you don't have so many patterns, it can still become tedious to have to manually
+create the pattern every time a new test is added or modified. Wouldn't it be nice if
 the pattern just created itself?!
 
 With Origen this is possible as long as your patterns lend themselves to being fully described
@@ -193,7 +193,7 @@ pgm_ckbd_b0       # Program a checkerboard to block 0, using default parameters
 pgm_ckbd_20us_b0  # Program a checkerboard to block 0, using default parameters + 20us programming time
 ~~~
 
-Again easy enough to understand, but we have just introduced somethings that will be
+Again easy enough to understand, but we have just introduced some things that will be
 difficult to interpret by our pattern dispatcher. Firstly how do we know if 'pgm'
 is a reference to an operation or a parameter set?
 
@@ -246,7 +246,7 @@ naming convention, however a good way to get started is to
 define a method to handle each field. This breaks down the parsing into manageable chunks
 and also gives you a convenient place to set defaults.
 Here are some examples
-(here assuming that the requested pattern
+(assuming that the requested pattern
 has been assigned to an instance variable by upstream code):
 
 ~~~ruby
